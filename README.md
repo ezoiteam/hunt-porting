@@ -20,3 +20,8 @@ Add check `ip->ifa_broadaddr` against `NULL`.
 ## otto.c
 
 Include ../patch.h.
+
+
+# TODO    <del>TO DEBUG</del>
+
+`hunt: sendto: Network is unreachable`
