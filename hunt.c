@@ -394,7 +394,8 @@ broadcast_vec(s, vector)
 
 	vec_cnt = 0;
 	for (ip = ifp; ip; ip = ip->ifa_next)
-		if (ip->ifa_addr && (ip->ifa_addr->sa_family == AF_INET) &&
+		if ((ip->ifa_broadaddr != NULL) &&
+		    (ip->ifa_addr->sa_family == AF_INET) &&
 		    (ip->ifa_flags & IFF_BROADCAST))
 			vec_cnt++;
 
@@ -405,11 +406,12 @@ broadcast_vec(s, vector)
 
 	vec_cnt = 0;
 	for (ip = ifp; ip; ip = ip->ifa_next)
-		if (ip->ifa_addr &&
-	           (ip->ifa_addr->sa_family == AF_INET) &&
+		if ((ip->ifa_broadaddr != NULL) &&
+		    (ip->ifa_addr->sa_family == AF_INET) &&
 		    (ip->ifa_flags & IFF_BROADCAST))
 			memcpy(&(*vector)[vec_cnt++], ip->ifa_broadaddr,
 			       sizeof(struct sockaddr_in));
+
 	freeifaddrs(ifp);
 	return vec_cnt;
 }
