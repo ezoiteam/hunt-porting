@@ -7,8 +7,6 @@ So we make a porting base on Cygwin and msys2.
 
 ## Instructions
 
-### make
-
 ### Environments
 
 You should have Cygwin on Windows or msys on Windows with the ``ncurses`` lib.
