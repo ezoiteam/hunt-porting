@@ -11,4 +11,4 @@ Unzip the .zip file and execute the install.bat in cmd.
 
 ## Run
 
-Open hunt.exe via mintty.exe.
+First you should disable the network cards until only one of them is available, and then open hunt.exe via mintty.exe.
