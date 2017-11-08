@@ -5,6 +5,18 @@ Porting project of Hunt on Windows.
 Hunt is a part of bsd-games, and it used to can be only run on Linux/Unix.
 So we make a porting base on Cygwin and msys2.
 
+## Instructions
+
+### make
+
+### Environments
+
+You should have Cygwin on Windows or msys on Windows with the ``ncurses`` lib.
+
+### Make
+
+Just get into the root directory of this repo and type `make`.
+
 ## Contents
 
 patch.c at hunt/, hunt.c and otto.c at hunt/hunt.
@@ -27,8 +39,3 @@ Add check `ip->ifa_broadaddr` against `NULL`.
 ## otto.c
 
 Include ../patch.h.
-
-
-# TODO    <del>TO DEBUG</del>
-
-`hunt: sendto: Network is unreachable`
