@@ -1,8 +1,5 @@
 @echo off
 
-mkdir home
-cd home
-mkdir %%USERNAME%%
-cd ../
+mkdir home\%USERNAME%
 
 exit /b
