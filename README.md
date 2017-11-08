@@ -1,4 +1,11 @@
-# hunt-patch
+# Porting of Hunt on Windows
+
+Porting project of Hunt on Windows.
+
+Hunt is a part of bsd-games, and it used to can be only run on Linux/Unix.
+So we make a porting base on Cygwin and msys2.
+
+## Contents
 
 patch.c at hunt/, hunt.c and otto.c at hunt/hunt.
 
