@@ -13,34 +13,16 @@ See [bsdgames](https://packages.debian.org/wheezy/bsdgames).
 
 ### Environments
 
-You should have Cygwin on Windows or msys2 on Windows with the ``ncurses`` lib.
+You should have Cygwin on Windows or msys2 on Windows with the ``ncurses-devel`` lib.
+
+### Apply patches
+
+`patch -p0 < patch_file.patch`
 
 ### Make
 
-Just get into the root directory of this repo and type `make`.
+Generate the makefile, then `make`.
 
-## Contents
-
-patch.c at hunt/, hunt.c and otto.c at hunt/hunt.
-
-
-### patch.h
-
-Included by **otto.c**.
-
-Some definations like `sigblock`, `sigmask`, etc, are added here.
-
-These code are copied from **glibc**.
-
-
-### hunt.c
-
-Add check `ip->ifa_broadaddr` against `NULL`.
-
-
-### otto.c
-
-Include ../patch.h.
 
 ## Run
 
