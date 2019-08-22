@@ -5,7 +5,7 @@ Porting project of Hunt on Windows.
 Hunt is a part of bsdgames, which could not be run on Windows.
 So we make a porting using Cygwin and msys2.
 
-See [bsdgames](https://packages.debian.org/wheezy/bsdgames).
+See [bsdgames](https://packages.debian.org/bsdgames).
 
 ## Instructions
 
